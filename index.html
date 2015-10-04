@@ -1,0 +1,380 @@
+{% extends "mainbase.html" %}
+{% load staticfiles %}
+{% block localhead %}
+
+{% endblock localhead %}
+{% block content %}
+
+<!-- header-1 -->
+<header class="header-1">
+    <div class="container">
+        <div class="row">
+            <div class="navbar span12">
+                <div class="navbar-inner">
+                    <button type="button" class="btn btn-navbar"></button>
+                    <a class="brand" href="{% url 'index' %}"><!--img src="img/logo@2x.png" width="50" height="50" alt="" --> Questr</a>
+                    <div class="nav-collapse collapse pull-right">
+                    
+                        <ul class="nav">
+                            <li class="">
+                                <a href="{% url 'index' %}">HOME</a>
+                            </li>
+                            <li>
+                                <a href="#">GET A QUOTE</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'trackquest' %}">TRACK DELIVERY</a>
+                            </li>
+                        </ul>
+                        
+                        <form class="navbar-form pull-right">
+                            <a class="btn btn-primary" href="{% url 'signin' %}">SIGN IN</a>
+                        </form>
+                        
+                        <ul class="subnav">
+                        	<li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms</a>
+                            </li>
+                            <li>
+                                <a href="#">Advertise</a>
+                            </li>
+                            <li>
+                                <a href="#">Affiliates</a>
+                            </li>
+                            <li>
+                                <a href="#">Newsletter</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="header-1-sub">
+    <div id="pt-main" class="page-transitions pt-perspective">
+        <div class="pt-page pt-page-1 bg-midnight-blue">
+            <div class="background">
+                &nbsp;
+            </div>
+            <div class="caption">
+                <div class="container">
+                    <h3>Same day delivery for everyone.</h3>
+                    <p class="lead">
+                        Deliver anything 24/7
+                    </p>
+                    
+                    {% comment %}
+                    <!-- privacy -->
+                    <h3>Questr Privacy Policy.</h3>
+                    <p>Everything you need to know</p>
+                    {% endcomment %}
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+ 
+<!-- logos -->
+<section class="logos">
+    <div class="container">
+        <div><img src={% static "img/logos/mashable.png" %} alt="">
+        </div>
+        <div><img src={% static "img/logos/guardian.png" %} alt="">
+        </div>
+        <div><img src={% static "img/logos/forbes.png" %} alt="">
+        </div>
+        <div><img src={% static "img/logos/red-bull.png" %} alt="">
+        </div>
+        <div><img src={% static "img/logos/ny-times.png" %} alt="">
+        </div>
+    </div>
+</section>
+ 
+<!-- blog-2 -->
+<section class="blog-2">
+  <div class="background hidden-phone">
+    <div class="container">
+      <div class="row"> 
+        <div class="span4">
+          <div>
+            <img src={% static "img/whatisquestr.jpg" %}>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.container-->
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="span7 offset5">
+        <h3>
+                What is Questr?
+            </h3>
+        <div class="promo">
+          <h4>The second sneak-peek</h4>
+          <p>Questr is a same day delivery service running in the Greater Toronto Area.  We deliver anything, anytime, within 4 hours or less.  Anyone can apply to be a courier with Questr--all you need is a car or bike.  We provide jobs to couriers on a first come first serve basis.  If a courier is given a job, he or she can choose to accept it or reject it.  If rejected, the job gets passed on to the next person.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/.container-->
+</section>
+
+<!-- content-10 -->
+<section class="content-10 bg-grey">
+  <div class="container">
+    <div class="row">
+      <div class="span6">
+        <h3 style="margin-bottom:0;">Why Use Questr?</h3>
+       
+        <div class="features">
+          <div class="box">
+            
+            <h6><i class="fa fa-money"></i> Affordable</h6>
+            <p style="font-weight:200;">Starting from only $5, Questr offers the most affordable same day shipping in Canada.
+            </p>
+          </div>
+          <div class="box">
+          	
+            <h6><i class="fa fa-clock-o"></i> Available 24/7</h6>
+            <p>86,400 seconds a day, 7 days a week, no matter it's rush hour on Friday or midnight on Christmas Eve.</p>
+          </div>
+          <div class="box">
+          	
+            <h6><i class="fa fa-bolt"></i> Lightning Fast</h6>
+            <p>Anywhere in GTA within 1 hour*. Say goodbye to overnight waits.</p>
+          </div>
+         
+          <div class="box">
+          	
+            
+            <h6>Reliable & Safe</h6>
+            <p>Frank over here.</p>
+          </div>
+          
+          <div class="box">
+          	
+            
+            <h6><i class="fa fa-eye"></i> Track Anytime</h6>
+            <p>Track your package's location anytime, anywhere, with our app. (coming soon)</p>
+          </div>
+          
+          
+          <div class="box">
+          	
+            
+            <h6><i class="fa fa-smile-o"></i> Great Customer Service</h6>
+            <p>Frank over here.</p>
+          </div>
+        </div>
+      </div>
+      <div class="span3 offset2 text-center">
+        <img src={% static "img/iPhone 6 Silver 2.png" %} width="303" height="636" alt="" style="margin-top:200px;">
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <!-- content-31 -->
+<section class="content-31">
+	<div class="container">
+	<div class="row">
+      <h3>How do you use Questr?</h3>
+      <h6>Using Questr is so easy it can be summed up in 3 simple steps:</h6>
+  	</div>
+	</div>
+  <div class="container">
+  	
+    <div class="row">
+   	
+      <div class="number">1</div>
+      <div class="span8 offset2">
+        <h3>Post a Quest</h3>
+        <p>Post a Quest in no time at all.  Choose from a selection of pre made sizing options--no measurements needed here.</p>
+        <div class="box">
+          <div class="img">
+            <img src={% static "img/icons/Touch@2x.png" %} width="130" height="179" alt="">
+            <img src={% static "img/icons/Touch@2x.png" %} width="130" height="179" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="number">2</div>
+      <div class="span8 offset2">
+        <div id="pt-1" class="page-transitions pt-perspective">
+          <div class="pt-page pt-page-current">
+            <h3 style="color:">Wait to be paired up with a courier</h3>
+            <p>It only takes a few minutes for someone to accept your Quest.  Once your package is picked up, you can track where your package is as it's being delivered (coming soon).</p>
+            <div class="box">
+              <div class="img">
+                <img src={% static "img/map@2x.png" %} width="380" height="179" alt="">
+                <img src={% static "img/map@2x.png" %} width="380" height="179" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="number">3</div>
+      <div class="span8 offset2">
+        <div id="pt-2" class="page-transitions pt-perspective">
+          <div class="pt-page pt-page-current">
+            <h3>Enjoy!</h3>
+            <p>Frank needed here.</p>
+            <div class="box">
+              <div class="img">
+               <img src={% static "img/icons/Gift-Box@2x.png" %} width="130" height="179" alt="">
+                <img src={% static "img/icons/Gift-Box@2x.png" %} width="130" height="179" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- content-2  -->
+<section class="content-2">
+    <div class="container">
+        <div class="row">
+            <div class="span6">
+                <h3>Start Using Questr</h3>
+                <p>
+                	We are currently in private beta, and only serve the Greater Toronto Area.  If you're interested in using Questr, please apply here.
+                </p>
+                <div class="btns">
+                    <a href="#" class="btn btn-large btn-clear">TRY IT NOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% comment %}
+<!-- Modal -->
+<div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+     	  <div class="modal-dialog">
+     	    <div class="modal-content" style="margin-top:48%;">
+     	      <div class="modal-body">
+     	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+     	        <br><br>
+     	        <form class="form-horizontal" role="form" action="{% url 'join'%}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline" target="_top" novalidate>{% csrf_token %}
+     	            <div class="form-group" style="margin:0 30px;">
+     	                
+     	            <input class="form-control" name="EMAIL" type="email" id="address" placeholder="Enter your email" data-validate="validate(required, email)" required="required" style="width:100%;">
+     	            <span id="result" class="alertMsg"></span>
+
+     	            <br><br>
+
+     	            <center><button type="submit" class="btn no-margin btn-lg big-button">Notify me</button></center>
+
+     	            </div><!--./form-group -->      
+     	        </form>
+     	      </div>
+     	    </div>
+     	  </div>
+     		</div>
+{% endcomment %}
+
+{% comment %}
+<!-- ******************** MENTIONS ******************** -->	
+<div class="row clearfix" style="margin:0; padding:0;">
+		<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 column" style="padding:0;">
+			<a href="http://skift.com/2014/03/27/daily-travel-startup-watch-opendoor-coexperiences-and-more/">
+				<img src={% static "img/skift.png" %} class="img-responsive grey-transition" style="margin-bottom:40px;">
+			</a>
+		</div><!-- ./column -->
+	</div><!-- ./row -->
+{% endcomment %}
+
+{% comment %}
+	<div class="row clearfix white-bg section">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 column">
+		    <div class="section-title">
+		        <h2>Simplistic size options</h2>
+		        <h4>“Life is simple. You just have to stop trying to figure it out.” ― Marty Rubin</h4>
+		    </div><!-- ./section-title -->
+		</div>
+
+
+		<div class="col-md-2 column"></div>
+		<div class="col-md-4 column grid" style="max-height:400px;">
+		
+		<figure class="effect-sadie">
+					<img src={% static "img/car.jpg" %} alt="Car" class="img-responsive">
+					<figcaption>
+						<h2><span>Car</span></h2>
+						<p>$6+$1/km<br>A few moving boxes.
+                    <br>A puppy's crate.
+                    <br>A 47" inch LED.</p>
+						
+					</figcaption>			
+				</figure>
+	</div><!-- ./grid -->
+	<div class="col-md-4 column grid" style="max-height:400px;">
+		<figure class="effect-sadie">
+					<img src={% static "img/van.jpg" %} alt="Van" class="img-responsive">
+					<figcaption>
+						<h2><span>VAN</span></h2>
+						<p>$10+$2/km<br>Many moving boxes.
+                    <br>Furniture at IKEA.
+                    <br>Your wolfpack.</p>
+					</figcaption>			
+				</figure>
+	</div><!-- ./grid -->
+	<div class="col-md-2 column"></div>
+
+</div><!-- ./row -->
+{% endcomment %}
+
+{% comment %}
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content" style="margin-top:48%;">
+			      <div class="modal-body">
+			      	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			      	<br><br>
+
+			    	<form action="{% url 'contactus'%}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline" target="_top" role="form" novalidate>{% csrf_token %}
+
+
+						<div class="form-group">
+							<input type="text" name="name" class="form-control" id="exampleInputName" placeholder="Name">
+							<input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+							<textarea name="message" class="form-control" rows="3" placeholder="Message" style="min-height:200px;"></textarea>
+						</div><!-- ./form-group -->
+						<br>
+						<center><button type="submit" class="btn btn-default theme-button">Send</button></center>
+					</form>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+{% endcomment %}
+			
+{% endblock content %}
+
+
+{% block scripts %}
+
+{% endblock scripts %}
