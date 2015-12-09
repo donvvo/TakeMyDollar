@@ -1,0 +1,11 @@
+{
+	"name": "simpleChat",
+	"version": "0.0.1",
+	"description": "web chat boilerplate with Node.js and Socket.io",
+	"dependencies": {
+		"socket.io": "latest",
+		"express": "latest",
+		"hogan-express": "latest"
+	},
+	"author": "Donald Derek Haddad <ddh@mit.edu>"
+}
